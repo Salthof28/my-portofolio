@@ -14,7 +14,7 @@ const inter = Inter({
 
 export default function AboutMe () {
     return (
-        <section className="bg-[#00131A] flex flex-col lg:flex-row min-h-screen max-lg:items-center w-screen">
+        <section id="about" className="bg-[#00131A] flex flex-col lg:flex-row lg:min-h-screen max-lg:items-center w-screen items-center max-lg:py-[4rem]">
             <h1 className={`text-[#f0fbff] ${teko.className} font-bold def-h1 text-center lg:hidden`}>Salman Althof</h1>
             <div className={`${stylesAbout.gridContainer}`}>
                 <img src="profile/pa5.jpeg" alt="pa1"/>
