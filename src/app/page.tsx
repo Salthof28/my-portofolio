@@ -42,8 +42,8 @@ export default function Home() {
         <Education/>
         <WorkExperience/>
         <Skills/>
-        <Footer/>
       </main>
+      <Footer/>
     </div>
   );
 }

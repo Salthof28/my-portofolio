@@ -8,7 +8,7 @@ const inter = Inter({
 
 export default function Footer() {
     return(
-        <footer className="bg-[#00080a] text-center p-[1rem]">
+        <footer className="bg-[#00080a] text-center p-[1rem] w-screen">
             <p className={`text-[#FEE2D4] ${inter.className} def-p`}>2025 &copy; Salman Althof</p>
         </footer>
     )
