@@ -30,8 +30,8 @@ export default function ProjectPage() {
                 <section className="bg-[#00131A] flex flex-col items-center pt-8 relative min-h-screen w-screen">
                     <h2 className={`text-[#F62CD1] def-h2 mb-[2rem] ${teko.className}`}>Projects</h2>
                     <div className="grid xl:grid-cols-[repeat(3,20rem)] 2xl:grid-cols-[repeat(3,25rem)] grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(3,16rem)] gap-5 px-[4%] z-10 text-[#28031d]">
-                        {listProjects.map((project) => (
-                            <article className="bg-gradient-to-br from-[#56c7e8] to-[#f62cd1] flex flex-col items-center justify-start rounded-[1rem] sm:w-[18rem] md:w-[20rem] lg:w-[16rem] xl:w-[20rem] 2xl:w-[25rem] transition duration-300 hover:drop-shadow-[0_0_12px_rgba(218,119,231,0.6)] active:scale-90">
+                        {listProjects.map((project, index) => (
+                            <article key={index} className="bg-gradient-to-br from-[#56c7e8] to-[#f62cd1] flex flex-col items-center justify-start rounded-[1rem] sm:w-[18rem] md:w-[20rem] lg:w-[16rem] xl:w-[20rem] 2xl:w-[25rem] transition duration-300 hover:drop-shadow-[0_0_12px_rgba(218,119,231,0.6)] active:scale-90">
                                 <div className="px-[1rem] py-[1rem]">
                                     <img 
                                         src={project.img} 
