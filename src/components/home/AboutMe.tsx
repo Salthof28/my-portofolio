@@ -14,7 +14,7 @@ const inter = Inter({
 
 export default function AboutMe () {
     return (
-        <section id="about" className="bg-[#00131A] flex flex-col lg:flex-row lg:min-h-screen max-lg:items-center w-screen items-center max-lg:py-[4rem]">
+        <section id="about" className="bg-[#00131A] flex flex-col lg:flex-row lg:min-h-screen max-lg:items-center w-screen items-center max-lg:py-[4rem] px-[8%] 2xl:px-[15%] gap-[1rem] xl:gap-[3rem]">
             <h1 className={`text-[#f0fbff] ${teko.className} font-bold def-h1 text-center lg:hidden`}>Salman Althof</h1>
             <div className={`${stylesAbout.gridContainer}`}>
                 <img src="profile/pa5.jpeg" alt="pa1"/>
@@ -24,14 +24,15 @@ export default function AboutMe () {
                 <img src="profile/pa1.jpeg" alt="aseptic-operator"/>
                 <img src="profile/pa2.jpeg" alt="pa2"/>
             </div>
-            <article className="text-[#f0fbff] column-container flex flex-col 2xl:gap-[18rem] gap-[1rem] max-lg:mt-[2rem]">
-                <h1 className={`${teko.className} def-h1 pt-[10%] pr-[20%] text-center max-lg:hidden`}>Salman Althof</h1>
-                <div className={`text-justify 2xl:pr-[20%] lg:pr-[12%] max-sm:px-[2rem] max-lg:px-[8rem]`}>
+            <article className="text-[#f0fbff] column-container flex flex-col 2xl:gap-[8rem] gap-[1rem] max-md:mt-[0.4rem] max-lg:mt-[2rem] 2xl:mt-[8rem]">
+                <h1 className={`${teko.className} def-h1 text-center max-lg:hidden`}>Salman Althof</h1>
+                <div className={`text-justify`}>
                     <h2 className={`${inter} def-h2 font-bold`}>About Me:</h2>
-                    <p className={`${inter} def-p`}>Hello, I'm a <span className="teal-green">Software Engineer</span> with expertise in C++, JavaScript, PHP, Bootstrap, and Node.js. With an academic background in Industrial Engineering and Electrical Engineering, I have a strong foundation in both software development and industrial systems. Additionally, I have over 4 years of experience in industrial automation, including SCADA, PLC, and microcontrollers, with hands-on experience in control and monitoring processes at PT Bio Farma.
+                    <p className={`${inter} def-p`}>{`I am a`} <span className={`text-[#74eab0]`}>Software Engineer</span> {`who values continuous learning, teamwork, and a data-driven approach. With four years of experience as a Field Engineer at PT Biofarma, I developed strong problem-solving skills and successfully reduced production downtime. I have built applications such as SmaFarm, connecting livestock owners with trusted shelters, and deShopper, an optimized e-commerce platform. Proficient in React.js, Next.js, and NestJS, and experienced with Docker for deployment and testing, I also possess strong communication skills. My educational background in Electrical Engineering (Associate Degree) and Industrial Engineering (Bachelor’s Degree) provides me with a solid technical foundation. This blend of engineering and software development expertise, along with my commitment to learning, makes me an adaptive candidate ready to make impactful contributions.`}
                     </p>
                 </div>
             </article>
         </section>
     )
 }
+{/* <span className={`text-[#74eab0]`}>Software Engineer</span> */}
