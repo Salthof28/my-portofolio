@@ -39,7 +39,7 @@ export default function Navbar() {
         <Link href={`/projects`} className={`text-[#0BA98C] hover:drop-shadow-[0_0_0.75rem_rgba(0,255,255,0.427)] transition duration-300`}>
           <SquareChartGantt className="w-[2rem] h-[2rem] lg:w-[2.5rem] lg:h-[2.5rem]" strokeWidth={1.3}/>
         </Link>
-        <Link href={`/`} className={`text-[#0BA98C] hover:drop-shadow-[0_0_0.75rem_rgba(0,255,255,0.427)] transition duration-300`}>
+        <Link href={`/contact`} className={`text-[#0BA98C] hover:drop-shadow-[0_0_0.75rem_rgba(0,255,255,0.427)] transition duration-300`}>
           <Phone className="w-[2rem] h-[2rem] lg:w-[2.5rem] lg:h-[2.5rem]" strokeWidth={1.3}/>
         </Link>
       </nav>
