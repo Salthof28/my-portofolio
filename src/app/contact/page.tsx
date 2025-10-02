@@ -74,7 +74,7 @@ export default function Contact() {
                 </section>
 
                 <section className="flex flex-col items-center h-[20vh] bg-[#270D01]">
-                    <h2 className={`text-[#FCAD78] def-h2 ${teko.className}`}>Let's Connect</h2>
+                    <h2 className={`text-[#FCAD78] def-h2 ${teko.className}`}>{`Let's Connect`}</h2>
                     <div className="flex flex-row gap-[1rem]">
                         <Link className="card-grid" href="https://www.linkedin.com/in/salman-althof-241209238">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">

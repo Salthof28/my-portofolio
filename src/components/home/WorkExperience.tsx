@@ -27,12 +27,10 @@ export default function WorkExperience() {
                 <p className={`text-center mb-4 def-p ${inter.className}`}>2022 - 2024</p>
 
                 <ul className={`list-disc text-justify max-[712px]:text-start def-ul ${inter.className}`}>
-                    <li>Performing control and monitoring pressure vessel tank processes during production.</li>
-                    <li>Disinfect, Clean in Place and Sterilize Pressure Vessel Tank before using production.</li>
-                    <li>Review data disinfect, Clean in Place, sterilize and processes production pressure vessel tank.</li>
-                    <li>Conducting initial troubleshooting using a machine pressure vessel tank, and SCADA pressure vessel tank.</li>
-                    <li>Conducting preventive maintenance on pressure vessel tank.</li>
-                    <li>Compiling and preparing production document requirements.</li>
+                    <li>Controlled and monitored pressure vessel tank processes during production, reducing production deviations by 90% by using real-time SCADA monitoring to track key production and cleaning parameters.</li>
+                    <li>Prepared and compiled production document requirements, increasing compliance by 90% and reducing production deviations by 60% through creating standardized production forms with clear guidelines for operators.</li>
+                    <li>Reviewed data from disinfection, CIP, sterilization, and production processes to reduce inconsistencies in subsequent production by 90%, by manually analyzing real-time data and collaborating with supervisors to address deviations.</li>
+                    <li>Troubleshot initial issues on pressure vessel tanks and SCADA systems, decreasing equipment downtime by 95% by conducting pressure checks and analyzing SCADA data to detect anomalies early.</li>
                 </ul>
                 </article>
             </div>
