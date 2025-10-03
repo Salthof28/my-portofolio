@@ -21,6 +21,9 @@ export default function Skills() {
     { img: "skills/nodejs.png", title: "Node.js" },
     { img: "skills/mysql.png", title: "MySQL" },
     { img: "skills/mongodb.png", title: "MongoDB" },
+    { img: "skills/nextjs.png", title: "NextJs" },
+    { img: "skills/nestjs.png", title: "NestJs" },
+    { img: "skills/scada.png", title: "Scada" },
   ]
   return(
       <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem]">
