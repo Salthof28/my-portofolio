@@ -51,8 +51,8 @@ export default async function DetailProject({ params }: DetailProjectItf) {
                     <div className={`my-[1rem] ml-[0.5rem] lg:ml-[1rem] xl:ml-[2rem] ${project?.sub1 || project?.imgs1 || project?.c1 ? 'block' : 'hidden'}`}>
                         <h2 className={`def-h2 ${teko.className} text-start`}>{project?.sub1}</h2>
                         <div className={`flex flex-row flex-wrap gap-[0.5rem] xl:gap-[1rem] justify-center my-[1rem] bg-[#88592e74] py-[0.6rem] md:py-[2rem] lg:py-[1.2rem] xl:py-[2rem] rounded-[0.4rem] md:rounded-[1rem] ${project?.imgs1 ? 'flex' : 'hidden'}`}>
-                            {project?.imgs1?.map(img => (
-                                <img src={img} className="2xl:w-[40rem] xl:w-[30rem] lg:w-[23rem] md:w-[32rem] w-[11rem] hover:scale-[1.11] transition-transform duration-500 rounded-[0.5rem] object-fit"/>
+                            {project?.imgs1?.map((img, index) => (
+                                <img key={index} src={img} className="2xl:w-[40rem] xl:w-[30rem] lg:w-[23rem] md:w-[32rem] w-[11rem] hover:scale-[1.11] transition-transform duration-500 rounded-[0.5rem] object-fit"/>
                             ))}
                         </div>
                         <p className={`${inter.className} def-p-project text-justify`}>{project?.c1}</p>
@@ -61,8 +61,8 @@ export default async function DetailProject({ params }: DetailProjectItf) {
                     <div className={`my-[1rem] ml-[0.5rem] lg:ml-[1rem] xl:ml-[2rem] ${project?.sub2 || project?.imgs2 || project?.c2 ? 'block' : 'hidden'}`}>
                         <h2 className={`def-h2 ${teko.className} text-start`}>{project?.sub2}</h2>
                         <div className={`flex flex-row flex-wrap gap-[0.5rem] xl:gap-[1rem] justify-center my-[1rem] bg-[#88592e74] py-[0.6rem] md:py-[2rem] lg:py-[1.2rem] xl:py-[2rem] rounded-[0.4rem] md:rounded-[1rem] ${project?.imgs2 ? 'flex' : 'hidden'}`}>
-                            {project?.imgs2?.map(img => (
-                                <img src={img} className="2xl:w-[40rem] xl:w-[30rem] lg:w-[23rem] md:w-[32rem] w-[11rem] hover:scale-[1.11] transition-transform duration-500 rounded-[0.5rem] object-fit"/>
+                            {project?.imgs2?.map((img, index) => (
+                                <img key={index} src={img} className="2xl:w-[40rem] xl:w-[30rem] lg:w-[23rem] md:w-[32rem] w-[11rem] hover:scale-[1.11] transition-transform duration-500 rounded-[0.5rem] object-fit"/>
                             ))}
                         </div>
                         <p className={`${inter.className} def-p-project text-justify`}>{project?.c2}</p>
@@ -71,8 +71,8 @@ export default async function DetailProject({ params }: DetailProjectItf) {
                     <div className={`my-[1rem] ml-[0.5rem] lg:ml-[1rem] xl:ml-[2rem] ${project?.sub3 || project?.imgs3 || project?.c3 ? 'block' : 'hidden'}`}>
                         <h2 className={`def-h2 ${teko.className} text-start`}>{project?.sub3}</h2>
                         <div className={`flex flex-row flex-wrap gap-[0.5rem] xl:gap-[1rem] justify-center my-[1rem] bg-[#88592e74] py-[0.6rem] md:py-[2rem] lg:py-[1.2rem] xl:py-[2rem] rounded-[0.4rem] md:rounded-[1rem] ${project?.imgs3 ? 'flex' : 'hidden'}`}>
-                            {project?.imgs3?.map(img => (
-                                <img src={img} className="2xl:w-[40rem] xl:w-[30rem] lg:w-[23rem] md:w-[32rem] w-[11rem] hover:scale-[1.11] transition-transform duration-500 rounded-[0.5rem] object-fit"/>
+                            {project?.imgs3?.map((img, index) => (
+                                <img key={index} src={img} className="2xl:w-[40rem] xl:w-[30rem] lg:w-[23rem] md:w-[32rem] w-[11rem] hover:scale-[1.11] transition-transform duration-500 rounded-[0.5rem] object-fit"/>
                             ))}
                         </div>
                         <p className={`${inter.className} def-p-project text-justify`}>{project?.c3}</p>
