@@ -13,7 +13,7 @@ const inter = Inter({
 
 export default function WorkExperience() {
     return(
-        <section className="bg-[#00131A] flex flex-col items-center h-screen justify-center">
+        <section className="bg-[#00131A] flex flex-col items-center min-h-screen justify-center">
             <h2 className={`${teko.className} def-h2 text-[#F62CD1] fteko font-bold my-6`}>Work Experience</h2>
             <div className="text-[#E5D8FD] flex flex-col items-center w-full">
                 <article className="flex flex-col items-center bg-[#F62CD125] px-[10%] py-[5%] rounded-xl mx-[8%] lg:mx-[15%] my-[2%] shadow-[0_4px_15px_rgba(246,44,209,0.6)] transition-transform duration-800 ease-in-out hover:scale-[1.02] hover:shadow-[0_4px_15px_rgb(246,44,209)]">

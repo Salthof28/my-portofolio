@@ -13,7 +13,7 @@ const inter = Inter({
 
 export default function Education () {
     return(
-        <section className="bg-[#00131A] h-full w-full py-[2%]">
+        <section className="bg-[#00131A] min-h-screen w-full py-[2%]">
             <div className="text-[#f0fbff] py-[1%] mx-[8%] lg:mx-[15%] max-lg:p-[2%] justify-center bg-white/5 rounded-md h-fit shadow-[0_6px_15px_rgba(0,0,0,0.3)]">
                 <h2 className={`pt-[1%] text-center def-h2 ${teko.className}`}>Education</h2>
                 {/* Binus */}

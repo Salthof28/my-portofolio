@@ -21,7 +21,7 @@ export default function Contact() {
         <div className="w-full flex flex-col items-center min-h-screen overflow-x-hidden">
             <Navbar/>
             <main>
-                <section className="flex flex-col items-center bg-[#270D01] py-8 w-screen h-[80vh]">
+                <section className="flex flex-col items-center bg-[#270D01] py-8 w-screen min-h-[80vh]">
                     <h2 className={`text-[#FCAD78] def-h2 font-bold mb-6 ${teko.className}`}>Contact Me</h2>
 
                     <form 

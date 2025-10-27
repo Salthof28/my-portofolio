@@ -14,7 +14,7 @@ const inter = Inter({
 
 export default function AboutMe () {
     return (
-        <section id="about" className="bg-[#00131A] flex flex-col lg:flex-row lg:min-h-screen max-lg:items-center w-screen items-center max-lg:py-[4rem] px-[8%] 2xl:px-[15%] gap-[1rem] xl:gap-[3rem]">
+        <section id="about" className="bg-[#00131A] flex flex-col lg:flex-row lg:min-h-screen max-lg:items-center w-screen items-center max-lg:py-[4rem] px-[8%] min-[1536px]:px-[10%] min-[2400px]:px-[15%] gap-[1rem] xl:gap-[3rem]">
             <h1 className={`text-[#f0fbff] ${teko.className} font-bold def-h1 text-center lg:hidden`}>Salman Althof</h1>
             <div className={`${stylesAbout.gridContainer}`}>
                 <img src="profile/pa5.jpeg" alt="pa1"/>
@@ -22,7 +22,7 @@ export default function AboutMe () {
                 <img src="profile/pa3.jpeg" alt="scada-operator"/>
                 <img src="profile/pa4.jpeg" alt="pa4"/>
                 <img src="profile/pa1.jpeg" alt="aseptic-operator"/>
-                <img src="profile/pa2.jpeg" alt="pa2"/>
+                <img src="profile/pa2.jpeg" alt="pa2"/>cd
             </div>
             <article className="text-[#f0fbff] column-container flex flex-col 2xl:gap-[8rem] gap-[1rem] max-md:mt-[0.4rem] max-lg:mt-[2rem] 2xl:mt-[8rem]">
                 <h1 className={`${teko.className} def-h1 text-center max-lg:hidden`}>Salman Althof</h1>

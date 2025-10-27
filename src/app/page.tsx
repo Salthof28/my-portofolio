@@ -24,7 +24,7 @@ export default function Home() {
       <Navbar/>
       <main>
         {/* home hello */}
-        <section id="home" className="flex flex-col-reverse lg:flex-row bg-[#270D01] w-screen max-md:py-[2rem] md:min-h-screen justify-center lg:justify-between gap-[2rem] 2xl:gap-[8rem] px-[12%] lg:pt-[14rem] xl:pt-[4rem] 2xl:pt-[2rem]">
+        <section id="home" className="flex flex-col-reverse lg:flex-row bg-[#270D01] w-screen max-md:py-[2rem] min-h-screen justify-center lg:justify-between gap-[2rem] 2xl:gap-[8rem] px-[12%] lg:pt-[14rem] xl:pt-[4rem] 2xl:pt-[2rem]">
           <div className="lg:mt-[15%]">
               <h2 className={`text-[#FCAD78] fteko def-h2 ${teko.className}`}>Hello!</h2>
               <h1 className={`text-[#FEE2D4] def-h1 ${inter.className} font-bold`}>{`I'm Salman Althof`}</h1>

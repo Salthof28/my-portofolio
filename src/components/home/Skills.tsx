@@ -26,7 +26,7 @@ export default function Skills() {
     { img: "skills/scada.png", title: "Scada" },
   ]
   return(
-      <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem]">
+      <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem] min-h-full">
         <h2 className={`text-[#F62CD1] def-h2 ${teko.className}`}>Skills</h2>
 
         <div className="flex flex-wrap justify-center gap-[20px] pt-4 xl:max-w-[56rem] lg:max-w-[50rem] md:max-w-[30rem] max-w-[15rem]">
