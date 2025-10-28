@@ -19,7 +19,7 @@ export default function ProjectPage() {
         <div className="w-full flex flex-col items-center min-h-screen overflow-x-hidden">
             <Navbar/>
             <main>
-                <section className="bg-[#00131A] flex flex-col items-center pt-8 relative min-h-screen w-screen">
+                <section id="projects" className="bg-[#00131A] flex flex-col items-center pt-8 relative min-h-screen w-screen">
                     <h2 className={`text-[#F62CD1] def-h2 mb-[2rem] ${teko.className}`}>Projects</h2>
                     <ProjectsCardList listProjects={listProject} />
                     {/* vapour effect */}
