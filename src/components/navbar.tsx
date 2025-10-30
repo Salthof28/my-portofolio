@@ -43,7 +43,7 @@ export default function Navbar() {
     }
   }, []);
   return (
-    <header className="flex items-center fixed h-screen z-50">
+    <header className="flex items-center fixed h-screen z-40">
       {/* hamburger button for mobile */}
       <div className="lg:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-20">
         <button onClick={() => setOpen(!open)} className="bg-[#0BA98C] text-white p-3 rounded-full shadow-lg"

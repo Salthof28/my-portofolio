@@ -1,5 +1,7 @@
+import { CircleSmall, Shell } from "lucide-react";
 import { Teko } from "next/font/google";
 import { Inter } from "next/font/google";
+import slideSoft from "./Skills.module.css";
 
 const teko = Teko({
   subsets: ["latin"],
@@ -24,19 +26,70 @@ export default function Skills() {
     { img: "skills/nextjs.png", title: "NextJs" },
     { img: "skills/nestjs.png", title: "NestJs" },
     { img: "skills/scada.png", title: "Scada" },
-  ]
+  ];
+  const softSkill = [
+    "Communication",
+    "Team Collaboration",
+    "Problem Solving",
+    "Time Management"
+  ];
+  const repeatedSoftSkills = [...softSkill, ...softSkill, ...softSkill, ...softSkill];
   return(
-      <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem] min-h-full">
-        <h2 className={`text-[#F62CD1] def-h2 ${teko.className}`}>Skills</h2>
+    <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem] min-h-full">
+      <h2 className={`flex flex-col my-[1rem] text-[#ffffff] def-h2 ${teko.className}`}>Skills</h2>
+      <div className={`text-[#ffffff] flex flex-row gap-[0.6rem] p-[1rem] my-[1rem] mx-[5%] items-center justify-between rounded-[0.6rem] bg-amber-600 w-[60rem] shadow-[inset_-2px_-2px_0_#fcd34d,inset_2px_2px_5px_#78350f] -rotate-2 ${slideSoft.electricCard}`}>
+        <div className={slideSoft.electricFlicker}></div>
+        <div className="flex flex-col w-[3rem] h-[3rem] items-center justify-center">
+          <CircleSmall />
+          <CircleSmall />
+          <CircleSmall />
+        </div>
+        <div className={`${slideSoft.sliderContainer} border border-amber-200 p-[0.6rem] rounded-[0.6rem]`}>
+          <div className={`${slideSoft.sliderTrack}`}>
+          {repeatedSoftSkills.map((soft, index) => 
+            <div key={index} className={`${slideSoft.slideCard} flex flex-row gap-[0.6rem] items-center justify-center`}>
+              <p className={`text-[clamp(0.8rem,1.5vw,1.4rem)] ${teko.className}`} font-bold>{soft}</p>
+              <Shell className="w-[2rem] h-[2rem]" />
+            </div>
+          )}
+          </div>
+          {/* duplicate only */}
+          <div aria-hidden className={`${slideSoft.sliderTrack}`}>
+          {repeatedSoftSkills.map((soft, index) => 
+            <div key={index} className={`${slideSoft.slideCard} flex flex-row gap-[0.6rem] items-center justify-center`}>
+              <p className={`text-[clamp(0.8rem,1.5vw,1.4rem)] ${teko.className}`} font-bold>{soft}</p>
+              <Shell className="w-[2rem] h-[2rem]" />
+            </div>
+          )}
+          </div>
+        </div>
+        <div className="flex flex-col w-[3rem] h-[3rem] items-center justify-center">
+          <CircleSmall />
+          <CircleSmall />
+          <CircleSmall />
+        </div>
+      </div>
 
-        <div className="flex flex-wrap justify-center gap-[20px] pt-4 xl:max-w-[56rem] lg:max-w-[50rem] md:max-w-[30rem] max-w-[15rem]">
+      <div className="flex flex-wrap justify-center gap-[20px] pt-4 xl:max-w-[56rem] lg:max-w-[50rem] md:max-w-[30rem] max-w-[15rem]">
+        {mySkills.map((skill, index) => (
+          <div key={index} className="flex flex-col items-center justify-around rounded-xl bg-gradient-to-br from-[#56c7e8] to-[#f62cd1] lg:min-w-[12rem] lg:max-w-[15rem] lg:h-[16rem] md:min-w-[12rem] md:max-w-[13rem] md:h-[18rem] min-w-[6rem] max-w-[10rem] h-[10rem] hover:drop-shadow-[0_0_12px_rgba(218,119,231,0.6)] transition">
+            <img src={skill.img} alt={skill.title} className="md:w-[8rem] w-[4rem]"/>
+            <p className={`text-[#52424d] ${inter.className} m-[0.4rem] md:text-[2rem] text-[1rem] font-bold`}>{skill.title}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* <div className={`${slideSoft.bannerSkill} mt-[2%]`}>
+        <div className={`${slideSoft.sliderSkill}`} style={{ ["--quantity"]: mySkills.length } as React.CSSProperties}>
           {mySkills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center justify-around rounded-xl bg-gradient-to-br from-[#56c7e8] to-[#f62cd1] lg:min-w-[12rem] lg:max-w-[15rem] lg:h-[16rem] md:min-w-[12rem] md:max-w-[13rem] md:h-[18rem] min-w-[6rem] max-w-[10rem] h-[10rem] hover:drop-shadow-[0_0_12px_rgba(218,119,231,0.6)] transition">
+            <div key={index} className={`${slideSoft.itemSkill} flex flex-col justify-center items-center rounded-xl bg-gradient-to-br from-[#56c7e8] to-[#f62cd1]`} style={{ ["--position"]: 0 + index } as React.CSSProperties}>
               <img src={skill.img} alt={skill.title} className="md:w-[8rem] w-[4rem]"/>
               <p className={`text-[#52424d] ${inter.className} m-[0.4rem] md:text-[2rem] text-[1rem] font-bold`}>{skill.title}</p>
             </div>
           ))}
         </div>
-      </section>
+        <div className={`${slideSoft.modelRobs}`}></div>
+      </div> */}
+    </section>
   )
 }    

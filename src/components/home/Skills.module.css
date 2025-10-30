@@ -1,0 +1,134 @@
+.sliderContainer {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  /* overflow-x: auto; */
+  width: 90%;
+  gap: 0.6rem;
+}
+.sliderContainer::-webkit-scrollbar {
+  display: none;
+}
+.sliderTrack {
+  display: flex;
+  gap: 0.6rem;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  animation: slideLeft 18s linear infinite;
+}
+
+.slideCard {
+  flex: 0 0 auto;
+}
+/* .sliderContainer:hover .sliderTrack {
+  animation-play-state: paused;
+} */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.electricCard {
+  position: relative;
+  animation: electricGlow 1.5s infinite alternate;
+}
+
+.electricFlicker {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fde68a;
+  border-radius: 0.6rem;
+  animation: electricFlicker 1.2s infinite;
+  filter: blur(3px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes electricGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 10px #fcd34d,
+      0 0 20px #fbbf24,
+      inset 0 0 5px #facc15;
+  }
+  50% {
+    box-shadow:
+      0 0 25px #fde68a,
+      0 0 25px #fcd34d,
+      inset 0 0 10px #fbbf24;
+  }
+}
+
+@keyframes electricFlicker {
+  0%, 100% { opacity: 0; }
+  10%, 12% { opacity: 1; }
+  20%, 21% { opacity: 0; }
+  50%, 51% { opacity: 1; }
+  55%, 57% { opacity: 0; }
+  80%, 81% { opacity: 1; }
+  85%, 100% { opacity: 0; }
+}
+
+/* .bannerSkill {
+  width: 100%;
+  height: 70rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.sliderSkill {
+  position: absolute;
+  width: 10.5rem;
+  height: 13.6rem;
+  top: 10%;
+  left: calc(50% - 6.25rem);
+  transform-style: preserve-3d;
+  transform: perspective(162.5rem);
+  animation: slideRot 20s linear infinite;
+  z-index: 2;
+}
+@keyframes slideRot {
+  from {
+    transform: perspective(162.5rem) rotateX(-16deg) rotateY(0deg);
+  }to {
+    transform: perspective(162.5rem) rotateX(-16deg) rotateY(360deg);
+  }
+}
+.itemSkill {
+  position: absolute;
+  inset: 0 0 0 0;
+  height: 100%;
+  transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+    translateZ(34.4rem);
+}
+.robs {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(87.5rem, 100vw);
+  height: max-content;
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.modelRobs {
+  background-image: url(/rob.png);
+  width: 100%;
+  height: 45vh;
+  position: absolute;
+  bottom: 30rem;
+  left: 0;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 0;
+} */
