@@ -1,4 +1,4 @@
-import { ListProject, ProjectMap } from "@/types/interfaces"
+import { ListProject, ProjectMap, WorkExperienceItf } from "@/types/interfaces"
 
 export const listProject: ListProject[] = [
     {
@@ -59,3 +59,18 @@ export const detailProjects: ProjectMap = {
         finalContent: "The final results of the project demonstrated a fully functional e-commerce website, allowing users to effectively browse and purchase products. Key features, including a responsive shopping cart, detailed product pages, and a secure admin dashboard, were successfully implemented. Testing the application showed positive feedback regarding user experience and ease of navigation, while the integration of NextAuth.js ensured secure and seamless authentication. Future improvements could focus on optimizing load times through code-splitting and enhanced caching strategies. Additionally, implementing advanced search algorithms to refine product filtering could further boost user experience. Incorporating analytics tools to gather user behavior data would allow for targeted enhancements based on actual usage patterns, enhancing overall performance and customer satisfaction."
     }
 }
+
+export const workExperience: WorkExperienceItf[] = [
+    {
+        id: 1,
+        name: 'PT Bio Farma . Aug 2022 - Aug 2024',
+        position: 'Field Operations Staff',
+        location: 'Bandung, Indonesia',
+        status: 'Contract',
+        image: 'work/biofarma.png',
+        overview: 'As a Field Operations Staff (SCADA Operator) at PT Bio Farma, I ensured reliable operation of pressure vessel systems by monitoring production parameters and performing disinfection, CIP, and sterilization processes. I also managed production documentation, verified data compliance, and troubleshot pressure vessel and SCADA issues to maintain production efficiency.',
+        achievements: ['Controlled and monitored pressure vessel tank processes during production, reducing production deviations by 90% by using real-time SCADA monitoring to track key production and cleaning parameters.', 'Prepared and compiled production document requirements, increasing compliance by 90% and reducing production deviations by 60% through creating standardized production forms with clear guidelines for operators.', 'Reviewed data from disinfection, CIP, sterilization, and production processes to reduce inconsistencies in subsequent production by 90%, by manually analyzing real-time data and collaborating with supervisors to address deviations.', 'Troubleshot initial issues on pressure vessel tanks and SCADA systems, decreasing equipment downtime by 95% by conducting pressure checks and analyzing SCADA data to detect anomalies early.'],
+        res: ['Controlled and monitored pressure vessel tank processes during production, as well as monitored and executed disinfection, Clean in Place (CIP), and sterilization procedures on pressure vessels to ensure process integrity and product quality.', 'Compiled and prepared production document requirements.', 'Reviewed data from disinfection, CIP, sterilization, and production processes to ensure compliance with quality standards.', 'Troubleshot initial issues on pressure vessel tanks and SCADA systems to minimize downtime and maintain production flow.'],
+        tech: ['SCADA', 'PLC', 'MySQL', 'Microsoft Office']
+    }
+]

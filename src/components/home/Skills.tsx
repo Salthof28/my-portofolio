@@ -35,16 +35,16 @@ export default function Skills() {
   ];
   const repeatedSoftSkills = [...softSkill, ...softSkill, ...softSkill, ...softSkill];
   return(
-    <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem] min-h-full">
+    <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem] min-h-full w-screen">
       <h2 className={`flex flex-col my-[1rem] text-[#ffffff] def-h2 ${teko.className}`}>Skills</h2>
-      <div className={`text-[#ffffff] flex flex-row gap-[0.6rem] p-[1rem] my-[1rem] mx-[5%] items-center justify-between rounded-[0.6rem] bg-amber-600 w-[60rem] shadow-[inset_-2px_-2px_0_#fcd34d,inset_2px_2px_5px_#78350f] -rotate-2 ${slideSoft.electricCard}`}>
+      <div className={`text-[#ffffff] flex flex-row gap-[0.6rem] p-[1rem] my-[1rem] mx-[5%] items-center justify-between rounded-[0.6rem] bg-amber-600 md:w-[40rem] xl:w-[60rem] shadow-[inset_-2px_-2px_0_#fcd34d,inset_2px_2px_5px_#78350f] -rotate-2 ${slideSoft.electricCard}`}>
         <div className={slideSoft.electricFlicker}></div>
-        <div className="flex flex-col w-[3rem] h-[3rem] items-center justify-center">
+        <div className="flex flex-col items-center justify-center max-md:hidden">
           <CircleSmall />
           <CircleSmall />
           <CircleSmall />
         </div>
-        <div className={`${slideSoft.sliderContainer} border border-amber-200 p-[0.6rem] rounded-[0.6rem]`}>
+        <div className={`${slideSoft.sliderContainer} md:border border-amber-200 p-[0.6rem] rounded-[0.6rem]`}>
           <div className={`${slideSoft.sliderTrack}`}>
           {repeatedSoftSkills.map((soft, index) => 
             <div key={index} className={`${slideSoft.slideCard} flex flex-row gap-[0.6rem] items-center justify-center`}>
@@ -63,7 +63,7 @@ export default function Skills() {
           )}
           </div>
         </div>
-        <div className="flex flex-col w-[3rem] h-[3rem] items-center justify-center">
+        <div className="flex flex-col items-center justify-center max-md:hidden">
           <CircleSmall />
           <CircleSmall />
           <CircleSmall />

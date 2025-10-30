@@ -27,4 +27,17 @@ export interface ProjectMap {
     [id: number]: ProjectDetail,
 }
 
+export interface WorkExperienceItf {
+    id: number,
+    name: string,
+    position: string
+    location: string,
+    status: string,
+    image: string,
+    overview: string,
+    achievements: string[],
+    res: string[],
+    tech: string[],
+}
+
 
