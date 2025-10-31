@@ -39,7 +39,7 @@ export default function WorkExperience() {
             <h2 className={`${teko.className} def-h2 text-[#ffffff] fteko font-bold my-6`}>Work Experience</h2>
             <div className="text-[#e9b0d8] flex flex-col items-center w-full">
                 {workExperience.map(work => (
-                    <article key={work.id} className="flex lg:flex-row flex-col-reverse items-center bg-[#F62CD125] px-[4%] py-[2%] rounded-xl mx-[8%] lg:mx-[15%] my-[2%] shadow-[0_4px_15px_rgba(246,44,209,0.6)] transition-transform duration-800 ease-in-out hover:scale-[1.02] hover:shadow-[0_4px_15px_rgb(246,44,209)] gap-[2rem]">
+                    <article key={work.id} className="flex lg:flex-row flex-col-reverse items-center bg-[#1d091ac0] px-[4%] py-[2%] rounded-xl mx-[8%] lg:mx-[15%] my-[2%] shadow-[0_4px_15px_rgba(165,11,137,0.8)] transition-transform duration-800 ease-in-out hover:scale-[1.02] hover:shadow-[0_4px_15px_rgb(217,21,181)] gap-[2rem]">
                         <div className="my-4">
                             {/* w-[18.75rem] max-[712px]:w-[8rem] */}
                             <img src="work/biofarma.png" alt="Biofarma" className="w-[clamp(8rem,60vw,18.75rem)] object-contain"/>

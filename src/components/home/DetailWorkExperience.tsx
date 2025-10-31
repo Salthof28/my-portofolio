@@ -21,16 +21,16 @@ export default function DetailWorkExperience ({ hiddenForm, currentWork }: Detai
     const [position, setPosition] = useState<string>('Overview');
     const btnName: string[] = ['Overview', 'Achievements', 'Responsibilities', 'Tech Stack'];
     return(
-        <div className={`bg-[#00131A] py-[1rem] px-[2rem] rounded-[0.6rem] w-[clamp(0.20rem,90vw,55rem)] flex flex-col h-[30rem] overflow-auto custom-scrollbar`}>
-            <button onClick={hiddenForm} className="text-gray-400 text-end font-bold">X</button>
-            <div>
+        <div className={`bg-[#00131A] rounded-[0.6rem] flex flex-col overflow-hidden formStyle`}>
+            <div className="flex flex-col w-[clamp(0.20rem,90vw,55rem)] h-[30rem] py-[1rem] px-[2rem]">
+                <button onClick={hiddenForm} className="text-gray-400 text-end font-bold">X</button>
                 <h2 className={`text-[#69baa5] ${teko.className} text-[clamp(1.4rem,1.5vw,2rem)]`}>{currentWork.position}</h2>
                 <h3 className={`text-[#559684] font-bold ${inter.className} text-[clamp(0.8rem,1.5vw,1.1rem)]`}>{currentWork.name}</h3>
-                <div className={`flex flex-row gap-[1rem] my-[2rem] overflow-auto`}>
+                <div className={`flex flex-row gap-[1rem] my-[2rem] overflow-auto custom-scrollbar`}>
                     {btnName.map((name, index) => (
-                        <button key={index} onClick={() => setPosition(name)} className={`relative px-[1rem] py-[0.4rem] rounded-[1rem] font-medium text-[0.95rem] transition-colors duration-300 z-10 ${position === name ? "text-black" : "text-[#bbbbbb]"} font-bold ${inter.className} text-[clamp(0.8rem,1.5vw,1rem)]`}>
+                        <button key={index} onClick={() => setPosition(name)} className={`relative px-[1rem] py-[0.1rem] md:py-[0.4rem] rounded-[1rem] font-medium text-[0.95rem] transition-colors duration-300 z-10 ${position === name ? "text-black" : "text-[#bbbbbb]"} font-bold ${inter.className} text-[clamp(0.8rem,1.5vw,1rem)]`}>
                             {position === name && (
-                            <motion.div layoutId="tab-indicator" className="absolute inset-0 bg-[#69baa5] rounded-[1rem] -z-1"
+                            <motion.section layoutId="tab-indicator" className="absolute inset-0 bg-[#69baa5] rounded-[1rem] -z-1"
                                 transition={{
                                 type: "spring",
                                 stiffness: 300,
@@ -43,13 +43,13 @@ export default function DetailWorkExperience ({ hiddenForm, currentWork }: Detai
                     ))}
                 </div>
                 {position === btnName[0] && (
-                    <div className={`${inter.className}`}>
+                    <div className={`${inter.className} overflow-auto h-[16rem] custom-scrollbar px-[0.4rem]`}>
                         <h2 className={`text-[#559684] font-bold text-[clamp(0.8rem,1.5vw,1.1rem)] mb-[0.4rem]`}>{position}</h2>
                         <p className={`text-[#bbbbbb] text-[clamp(0.8rem,1.5vw,1rem)] text-justify`}>As a Field Operations Staff (SCADA Operator) at PT Bio Farma, I ensured reliable operation of pressure vessel systems by monitoring production parameters and performing disinfection, CIP, and sterilization processes. I also managed production documentation, verified data compliance, and troubleshot pressure vessel and SCADA issues to maintain production efficiency.</p>
                     </div>
                 )}
                 {position === btnName[1] && (
-                    <div className={`${inter.className}`}>
+                    <div className={`${inter.className} overflow-auto h-[16rem] custom-scrollbar px-[0.4rem]`}>
                         <h2 className={`text-[#559684] font-bold text-[clamp(0.8rem,1.5vw,1.1rem)] mb-[0.4rem]`}>{position}</h2>
                         <div className={`flex flex-col text-justify ${inter.className} text-[clamp(0.8rem,1.5vw,1rem)] text-[#bbbbbb] gap-[0.4rem]`}>
                             {currentWork.achievements.map((achieve, index) => (
@@ -61,7 +61,7 @@ export default function DetailWorkExperience ({ hiddenForm, currentWork }: Detai
                     </div>
                 )}
                 {position === btnName[2] && (
-                    <div className={`${inter.className}`}>
+                    <div className={`${inter.className} overflow-auto h-[16rem] custom-scrollbar px-[0.4rem]`}>
                         <h2 className={`text-[#559684] font-bold text-[clamp(0.8rem,1.5vw,1.1rem)] mb-[0.4rem]`}>{position}</h2>
                         <ul className={`flex flex-col text-justify ${inter.className} text-[clamp(0.8rem,1.5vw,1rem)] text-[#bbbbbb] gap-[0.4rem]`}>
                             {currentWork.res.map((responsi, index) => (
