@@ -23,7 +23,7 @@ export default function ProjectPage() {
                     <h2 className={`text-[#F62CD1] def-h2 mb-[2rem] ${teko.className}`}>Projects</h2>
                     <ProjectsCardList listProjects={listProject} />
                     {/* vapour effect */}
-                    <div className={`${stylesVapour.vaporContainer}`}>
+                    <div className={`${stylesVapour.vaporContainer} z-0`}>
                         <div></div>
                         <div></div>
                         <div></div>

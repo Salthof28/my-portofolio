@@ -10,17 +10,11 @@ export interface ProjectDetail {
     slug: string,
     title: string,
     img: string,
-    mainContent: string,
-    sub1?: string,
-    sub2?: string,
-    sub3?: string,
-    c1?: string,
-    c2?: string,
-    c3?: string,
-    finalContent?: string,
-    imgs1?: string[],
-    imgs2?: string[],
-    imgs3?: string[],
+    description: string,
+    roles: string[],
+    features: string[],
+    images?: string[],
+    tech: string[],
 }
 
 export interface ProjectMap {
