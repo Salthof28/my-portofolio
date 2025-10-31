@@ -52,7 +52,7 @@ export default function WorkExperience() {
                                 <p className={`font-bold text-[clamp(0.8rem,1.5vw,1.2rem)] ${inter.className}`}>Location: <span className="text-[#e9b0d88a]">{work.location}</span></p>
                                 <p className={`font-bold text-[clamp(0.8rem,1.5vw,1.2rem)] ${inter.className} text-[#e9b0d88a]`}>{work.status}</p>
                             </div>
-                            <button onClick={() => handleViewDetail(work)} className={`flex flex-row justify-center gap-[0.2rem] bg-[#ffa154] p-[0.8rem] font-bold text-[clamp(0.6rem,1.1vw,1.1rem)] rounded-[0.4rem] text-[#9f3900] ${inter.className} active:scale-98 shadow-[0_6px_15px_rgba(0,0,0,0.3)] mx-[15%] xl:mx-[30%]`}>View Detail <ArrowUpRight className="w-[clamp(0.6rem,1.1vw,1.5rem)] h-[clamp(0.6rem,1.1vw,1.5rem)]" /></button>
+                            <button onClick={() => handleViewDetail(work)} className={`flex flex-row justify-center gap-[0.2rem] bg-[#b7a6b4] p-[0.8rem] font-bold text-[clamp(0.6rem,1.1vw,1.1rem)] rounded-[0.4rem] text-[#51424e] ${inter.className} active:scale-98 shadow-[0_6px_15px_rgba(0,0,0,0.3)] mx-[15%] xl:mx-[30%] hover:bg-[#82727f] hover:text-[#facdf1]`}>View Detail <ArrowUpRight className="w-[clamp(0.6rem,1.1vw,1.5rem)] h-[clamp(0.6rem,1.1vw,1.5rem)]" /></button>
                         </div>
                     </article>
                 ))}

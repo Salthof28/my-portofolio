@@ -41,7 +41,7 @@
 .electricFlicker {
   position: absolute;
   inset: 0;
-  border: 2px solid #fde68a;
+  border: 2x solid #fde68a;
   border-radius: 0.6rem;
   animation: electricFlicker 1.2s infinite;
   filter: blur(3px);
@@ -52,14 +52,14 @@
 @keyframes electricGlow {
   0%, 100% {
     box-shadow:
-      0 0 10px #fcd34d,
-      0 0 20px #fbbf24,
+      0 0 6px #fcd34d,
+      0 0 16px #fbbf24,
       inset 0 0 5px #facc15;
   }
   50% {
     box-shadow:
-      0 0 25px #fde68a,
-      0 0 25px #fcd34d,
+      0 0 18px #fde68a,
+      0 0 18px #fcd34d,
       inset 0 0 10px #fbbf24;
   }
 }
