@@ -28,8 +28,13 @@ export default function AboutMe () {
                 <h1 className={`${teko.className} def-h1 text-center max-lg:hidden`}>Salman Althof</h1>
                 <div className={`text-justify`}>
                     <h2 className={`${inter} def-h2 font-bold`}>About Me:</h2>
-                    <p className={`${inter} text-[clamp(0.8rem,1.5vw,1.5rem)]`}>{`I am a`} <span className={`text-[#74eab0]`}>Software Engineer</span> {`who values continuous learning, teamwork, and a data-driven approach. With four years of experience as a Field Engineer at PT Biofarma, I developed strong problem-solving skills and successfully reduced production downtime. I have built applications such as SmaFarm, connecting livestock owners with trusted shelters, and deShopper, an optimized e-commerce platform. Proficient in React.js, Next.js, and NestJS, and experienced with Docker for deployment and testing, I also possess strong communication skills. My educational background in Electrical Engineering (Associate Degree) and Industrial Engineering (Bachelor’s Degree) provides me with a solid technical foundation. This blend of engineering and software development expertise, along with my commitment to learning, makes me an adaptive candidate ready to make impactful contributions.`}
-                    </p>
+                    <div className={`${inter} text-[clamp(0.8rem,1.5vw,1.5rem)] flex flex-col gap-[1rem]`}>
+                        <p >{`I am a`} <span className={`text-[#74eab0]`}>Software Engineer</span> {`who enjoys building impactful and data-driven digital solutions. Before diving into tech, I spent four years as a Field Engineer at PT Bio Farma, where I developed strong analytical and problem-solving skills by optimizing production systems and reducing downtime.`}
+                        </p>
+                        <p>Skilled in NestJs, React, Next.js, and Docker, I combine analytical thinking from my Electrical and Industrial Engineering background with a problem-solving mindset to deliver scalable and user-focused solutions.</p>
+                        <p>With a background in Electrical and Industrial Engineering, I combine technical precision with a system-oriented mindset — always learning, improving, and striving to build software that makes a difference.</p>
+                        
+                    </div>
                 </div>
             </article>
         </section>
