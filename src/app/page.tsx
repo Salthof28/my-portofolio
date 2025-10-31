@@ -6,6 +6,7 @@ import WorkExperience from "@/components/home/WorkExperience";
 import Navbar from "@/components/navbar";
 import { Teko } from "next/font/google";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const teko = Teko({
   subsets: ["latin"],
@@ -30,9 +31,12 @@ export default function Home() {
               <h1 className={`text-[#FEE2D4] def-h1 ${inter.className} font-bold`}>{`I'm Salman Althof`}</h1>
               <p className={`text-[#FEE2D4] def-p ${inter.className}`}>I am a Software Engineer passionate about full-stack web development and industrial automation.</p>
               <br/>
-              <form method="get" action="profile/cv/resume.pdf">
-                  <button className={`my-custom-button bg-[#FCAD78] text-[#270D01] shadow-lg/30 ring-[0.1rem] ring-black/5 active:scale-95 hover:scale-110 transform transition duration-300`}>Download My Resume</button>
-              </form>
+              <div className="flex flex-row gap-[1.4rem]">
+                <Link href='/#about' className={`my-custom-button bg-[#fd8c41] text-[#270D01] shadow-lg/30 ring-[0.1rem] ring-black/5 active:scale-95 hover:scale-110 transform transition duration-300`}>About Me</Link>
+                <form method="get" action="profile/cv/resume.pdf">
+                    <button className={`my-custom-button bg-[#FCAD78] text-[#270D01] shadow-lg/30 ring-[0.1rem] ring-black/5 active:scale-95 hover:scale-110 transform transition duration-300`}>Download My Resume</button>
+                </form>
+              </div>
           </div>
           <div className="max-lg:flex max-lg:justify-center lg:pt-[8rem] xl:pt-[10rem] 2xl:pt-[16rem]">
               <img className="w-[60vw] 2xl:w-[30vw]" src="profile/photo-home.png" alt="coming-soon" />
