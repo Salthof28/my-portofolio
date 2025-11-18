@@ -2,6 +2,7 @@ import { CircleSmall, Shell } from "lucide-react";
 import { Teko } from "next/font/google";
 import { Inter } from "next/font/google";
 import slideSoft from "./Skills.module.css";
+import { title } from "process";
 
 const teko = Teko({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function Skills() {
     { img: "skills/nextjs.png", title: "NextJs" },
     { img: "skills/nestjs.png", title: "NestJs" },
     { img: "skills/scada.png", title: "Scada" },
+    { img: "skills/golang.png", title: "Golang"}
   ];
   const softSkill = [
     "Communication",
@@ -73,7 +75,7 @@ export default function Skills() {
       <div className="flex flex-wrap justify-center gap-[20px] pt-4 xl:max-w-[56rem] lg:max-w-[50rem] md:max-w-[30rem] max-w-[15rem]">
         {mySkills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center justify-around rounded-xl bg-gradient-to-br from-[#56c7e8] to-[#f62cd1] lg:min-w-[12rem] lg:max-w-[15rem] lg:h-[16rem] md:min-w-[12rem] md:max-w-[13rem] md:h-[18rem] min-w-[6rem] max-w-[10rem] h-[10rem] hover:drop-shadow-[0_0_12px_rgba(218,119,231,0.6)] transition">
-            <img src={skill.img} alt={skill.title} className="md:w-[8rem] w-[4rem]"/>
+            <img src={skill.img} alt={skill.title} className="md:w-[8rem] w-[4rem] h-[8rem] object-contain"/>
             <p className={`text-[#52424d] ${inter.className} m-[0.4rem] md:text-[2rem] text-[1rem] font-bold`}>{skill.title}</p>
           </div>
         ))}
