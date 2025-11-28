@@ -3,13 +3,20 @@ import { ListProject, ProjectMap, WorkExperienceItf } from "@/types/interfaces"
 export const listProject: ListProject[] = [
     {
         id: 1,
-        slug: "dshopper-frontend",
-        title: "dShopers",
-        img: 'projects/dshopper/Home.png',
-        content: 'This project involves the development of a modern e-commerce website, leveraging Next.js technology. The platform is designed to facilitate users in seamlessly browsing, searching, and filtering products across various categories. It enhances the user experience by providing detailed product information and enabling efficient management of a shopping cart. Meanwhile, administrators can maintain product inventory and manage user profiles through a secure dashboard, which ensures protected access via middleware.'
+        slug: "scada-ovenHeater",
+        title: "SCADA System Oven Heater and Tea Leaf Dryer Plant",
+        img: '/projects/scada/HMI.JPG',
+        content: 'Designed and developed a full SCADA system for an Oven Heater and Tea Leaf Dryer plant, integrating ADAM-6015/6060 modules, building a complete HMI with alarm system, OPC communication, database logging, and implementing SCADA standards such as security levels, P&ID documentation, state flow diagrams, and sequential control tables.'
     },
     {
         id: 2,
+        slug: "dshopper-frontend",
+        title: "dShopers",
+        img: '/projects/dshopper/Home.png',
+        content: 'This project involves the development of a modern e-commerce website, leveraging Next.js technology. The platform is designed to facilitate users in seamlessly browsing, searching, and filtering products across various categories. It enhances the user experience by providing detailed product information and enabling efficient management of a shopping cart. Meanwhile, administrators can maintain product inventory and manage user profiles through a secure dashboard, which ensures protected access via middleware.'
+    },
+    {
+        id: 3,
         slug: "revobank-backend",
         title: "Revobank",
         img: '/projects/revobank/list-api-swagger.png',
@@ -17,16 +24,26 @@ export const listProject: ListProject[] = [
     },
 
     {
-        id: 3,
+        id: 4,
         slug: "smafarm-platform",
         title: "Smafarm",
-        img: 'projects/smafarm/home.png',
+        img: '/projects/smafarm/home.png',
         content: 'The project, titled SmaFarm, is aimed at providing a comprehensive solution for livestock management and care. It addresses the market need for digital platforms that support small and medium farmers by resolving their difficulties in marketing livestock and managing care efficiently. SmaFarm acts as a "one-stop care and marketplace" for livestock, ensuring transparency and trust in high-value transactions.'
     }
 ]
 
 export const detailProjects: ProjectMap = {
     1: {
+        slug: "scada-ovenHeater",
+        title: "SCADA System Oven Heater and Tea Leaf Dryer Plant",
+        img: '/projects/scada/HMI.JPG',
+        description: 'Designed and developed a full SCADA system for an Oven Heater and Tea Leaf Dryer plant, integrating ADAM-6015/6060 modules, building a complete HMI with alarm system, OPC communication, database logging, and implementing SCADA standards such as security levels, P&ID documentation, state flow diagrams, and sequential control tables.',
+        roles: ['Designed the SCADA system architecture for the Oven Heater and Tea Leaf Dryer plant.', 'Created technical documentation including BFD, PFD, P&ID, and Loop Diagrams.', 'Integrated ADAM-6015 for analog temperature sensing and ADAM-6060 for digital relay control.', 'Configured Serial/Modbus communication between controllers and the SCADA software.', 'Developed the full Human Machine Interface (HMI), including tagnames, scripts, animations, and interface layout.', 'Implemented an alarm system to detect temperature deviations, equipment faults, and relay issues.', 'Set up OPC communication (OLE for Process Control) for real-time data exchange.', 'Built database logging for temperature trends, alarm history, and operational events.', 'Implemented system security by defining user access levels (operator, supervisor, administrator).', 'Created state flow diagrams and sequential tables to model the operational logic of the oven heater and dryer.'],
+        features: ['Real-time monitoring of oven and dryer temperature using ADAM-6015 analog inputs.', 'Digital control of heater relays via ADAM-6060 outputs.', 'Fully interactive HMI with process visualization, animations, and operator controls.', 'Alarm system with real-time fault detection, alarm acknowledgments, and priority levels.', 'OPC-based data communication for reliable integration between controllers and SCADA software.', 'Data logging for temperature trends, alarm history, and operational events stored in a database.', 'User access management with multiple security levels to control system permissions.', 'Sequential operation logic for startup, running, and shutdown phases.', 'State flow visualization that represents process steps and transitions.', 'Standardized SCADA design based on industrial HMI and documentation standards.'],
+        images: ["/projects/scada/HMI.JPG", '/projects/scada/Sensor Pengering.JPG', '/projects/scada/Maintenance.JPG', '/projects/scada/Plant Oven.JPG', '/projects/scada/Plant Pengering.JPG', '/projects/scada/Sensor oven.JPG',"/projects/scada/sfd-loop-diagram.png", "/projects/scada/sfd-sistem-umum.png", "/projects/scada/tabel-sequential.png"],
+        tech: ['ADAM-6060', 'ADAM-6015', 'SCADA', 'HMI', 'OPC Server']
+    },
+    2: {
         slug: "dshopper-frontend",
         title: "dShopers",
         img: '/projects/dshopper/Home.png',
@@ -36,7 +53,7 @@ export const detailProjects: ProjectMap = {
         images: ["/projects/dshopper/ShopPage.png", "/projects/dshopper/ProfileCustomer.png", "/projects/dshopper/ListProductAdmin.png", "/projects/dshopper/PageHandleUsers.png"],
         tech: ['NextJs', 'TailwindCSS', 'ESLint', 'Jest', 'Vercel']
     },
-    2: {
+    3: {
         slug: "revobank-backend",
         title: "Revobank",
         img: '/projects/revobank/list-api-swagger.png',
@@ -46,7 +63,7 @@ export const detailProjects: ProjectMap = {
         images: ["/projects/revobank/erd-database.png", "/projects/revobank/list-api-swagger.png", "/projects/revobank/example-account-api.png"],
         tech: ['NestJs', 'Prisma', 'PostgreSQL', 'TypeScript', 'Git', 'Rest API', 'Swagger', 'Bcrypt', 'Cyrpto', 'Jest']
     },
-    3: {
+    4: {
         slug: "smafarm-platform",
         title: "Smafarm Platform",
         img: '/projects/smafarm/home.png',
