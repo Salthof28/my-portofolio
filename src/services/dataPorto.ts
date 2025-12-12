@@ -29,6 +29,13 @@ export const listProject: ListProject[] = [
         title: "Smafarm",
         img: '/projects/smafarm/home.png',
         content: 'The project, titled SmaFarm, is aimed at providing a comprehensive solution for livestock management and care. It addresses the market need for digital platforms that support small and medium farmers by resolving their difficulties in marketing livestock and managing care efficiently. SmaFarm acts as a "one-stop care and marketplace" for livestock, ensuring transparency and trust in high-value transactions.'
+    },
+    {
+        id: 5,
+        slug: "werent-prd",
+        title: "WeRent - Product Requirement Document Implementation",
+        img: '/projects/werent-prd/page-detail.png',
+        content: 'Implementation Project is a hands-on project focused on developing user-centered web applications based on PRD guidelines. Supervised by RevoU, the project hones collaboration, problem-solving, and analytical skills to deliver scalable, high-quality solutions aligned with business and user needs.'
     }
 ]
 
@@ -71,7 +78,17 @@ export const detailProjects: ProjectMap = {
         roles: ['Designed user-friendly website interfaces to enhance user experience and accessibility.', 'Developed backend systems and business logic to enable efficient data communication via APIs.', 'Created and managed Supabase database to optimize data management and ensure reliable storage.', 'Conducted thorough testing on both frontend and backend to identify and resolve bugs, improving platform stability.'],
         features: ['Fully Responsive Design: Built with a mobile-first approach, ensuring seamless experience across all devices', 'Livestock and Shelter Catalog', 'Order Tracking', 'User Management: Secure user registration and authentication', 'Password hashing with bcrypt', 'JWT-based authentication system', 'User profile management', 'Livestock and Shelter management: full CRUD operations.', 'Admin Dashboard.'],
         images: ["/projects/smafarm/livestock.png", "/projects/smafarm/shelter.png", "/projects/smafarm/profile.png", "/projects/smafarm/formBuy.png", "/projects/smafarm/dashboardAdmin.png", "/projects/smafarm/dashboard-breeder.png", "/projects/smafarm/ERD-Database.png", "/projects/smafarm/apiList.png"],
-        tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Vercel', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API', 'Bcrypt']
+        tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Vercel', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API', 'Bcrypt', 'AUTH']
+    },
+    5: {
+        slug: "werent-prd",
+        title: "WeRent - Product Requirement Document Implementation",
+        img: '/projects/werent-prd/page-detail.png',
+        description: "Implementation Project is a hands-on project focused on developing user-centered web applications based on PRD guidelines. Supervised by RevoU, the project hones collaboration, problem-solving, and analytical skills to deliver scalable, high-quality solutions aligned with business and user needs. As a Back-End Team Lead, I broke down complex back-end tasks into manageable tasks, led the team by assigning duties according to each member's strengths, and initialized the framework using NestJS to expedite onboarding. I also designed a database schema and API, created middleware for rate limiting API requests, and implemented logging middleware for activity monitoring. Additionally, I developed custom exception handling and executed thorough back-end testing to ensure reliability before deployment.",
+        roles: ['Broke down back-end tasks into manageable items for the development team.', 'Led the back-end development team by assigning specific tasks aligned with each memberU+0060s strengths.', 'Initialized the back-end framework setup using NestJS for improved project structure.', 'Designed a database schema and RESTful API to support application needs.', 'Developed a rate limit middleware to control API request traffic effectively.', 'Implemented a comprehensive logging middleware for monitoring back-end activities.', 'Developed custom exception handling to ensure meaningful error responses.', 'Executed thorough back-end testing to ensure functional reliability and performance with jest.'],
+        features: ['Database Design and API Development', 'Rate Limiting', 'Error Handling', 'Automated Testing and Quality Assurance'],
+        images: ["/projects/werent-prd/page-detail.png", "/projects/werent-prd/logger-middleware.png", "/projects/werent-prd/test.png"],
+        tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API']
     },
 }
 
