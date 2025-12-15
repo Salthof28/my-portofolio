@@ -88,7 +88,7 @@ export const detailProjects: ProjectMap = {
         roles: ['Broke down back-end tasks into manageable items for the development team.', 'Led the back-end development team by assigning specific tasks aligned with each memberU+0060s strengths.', 'Initialized the back-end framework setup using NestJS for improved project structure.', 'Designed a database schema and RESTful API to support application needs.', 'Developed a rate limit middleware to control API request traffic effectively.', 'Implemented a comprehensive logging middleware for monitoring back-end activities.', 'Developed custom exception handling to ensure meaningful error responses.', 'Executed thorough back-end testing to ensure functional reliability and performance with jest.'],
         features: ['Database Design and API Development', 'Rate Limiting', 'Error Handling', 'Automated Testing and Quality Assurance'],
         images: ["/projects/werent-prd/page-detail.png", "/projects/werent-prd/logger-middleware.png", "/projects/werent-prd/test.png"],
-        tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API', 'CORS']
+        tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API']
     },
 }
 
