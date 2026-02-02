@@ -31,7 +31,7 @@ export default function ProjectsCardList ({ listProjects }: ProjectsCardListItf)
                         <img 
                             src={project.img} 
                             alt={project.title}
-                            className="object-fit w-[28rem] h-[11rem] rounded-[0.5rem]"
+                            className="object-cover object-top w-[28rem] h-[11rem] rounded-[0.5rem]"
                         />
                     </div>
                     <div className="flex flex-col text-justify px-[1rem] pb-[1rem] min-h-[8rem]">
