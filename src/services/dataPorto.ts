@@ -36,6 +36,13 @@ export const listProject: ListProject[] = [
         title: "WeRent - Product Requirement Document Implementation",
         img: '/projects/werent-prd/page-detail.png',
         content: 'Implementation Project is a hands-on project focused on developing user-centered web applications based on PRD guidelines. Supervised by RevoU, the project hones collaboration, problem-solving, and analytical skills to deliver scalable, high-quality solutions aligned with business and user needs.'
+    },
+    {
+        id: 6,
+        slug: "tiketq-microservice",
+        title: "TiketQ - Microservice Development",
+        img: '/projects/tiketq-microservice/Homepage.jpg',
+        content: `In the Microservice Development virtual internship project supervised by RevoU and TiketQ I contributed as a backend developer focused on developing a smart booking dashboard that delivers real-time insights into ticket sales, booking trends, and customer behavior. I defined the Midtrans Port interface to ensure seamless integration with payment gateways, establishing robust communication channels for transaction processing.`
     }
 ]
 
@@ -89,6 +96,16 @@ export const detailProjects: ProjectMap = {
         features: ['Database Design and API Development', 'Rate Limiting', 'Error Handling', 'Automated Testing and Quality Assurance'],
         images: ["/projects/werent-prd/page-detail.png", "/projects/werent-prd/logger-middleware.png", "/projects/werent-prd/test.png"],
         tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API']
+    },
+    6: {
+        slug: "tiketq-microservice",
+        title: "TiketQ - Microservice Development",
+        img: '/projects/tiketq-microservice/Homepage.jpg',
+        description: `In the Microservice Development virtual internship project—supervised by RevoU and TiketQ—I contributed as a backend developer focused on developing a smart booking dashboard that delivers real-time insights into ticket sales, booking trends, and customer behavior. I defined the Midtrans Port interface to ensure seamless integration with payment gateways, establishing robust communication channels for transaction processing. I created a reliable HTTP Client Helper infrastructure, enhancing the application's ability to handle various HTTP requests, which streamlined communication with external services. Additionally, I implemented the Outgoing Midtrans Snap Request to facilitate efficient transaction data processing, improving the overall user payment experience. I also implemented the Transaction History Endpoint to provide users easy access to their transaction records, significantly enhancing user engagement and satisfaction. Finally, I conducted thorough testing of transactions for Midtrans integration, ensuring the system operated effectively and minimizing potential errors, ultimately contributing to a smooth and reliable payment process.`,
+        roles: [`Defined the Midtrans Port interface to facilitate seamless integration with payment gateways, ensuring robust communication lines for transaction processing.`, `Created a reliable HTTP Client Helper infrastructure, enhancing the application's capability to handle various HTTP requests, which streamlined communication with external services.`, `Implemented the Outgoing Midtrans Snap Request, resulting in efficient processing of transaction data.`, `Implemented the Transaction History Endpoint to provide users with accessible records of their transactions, thereby improving user experience and engagement.`, `Conducted thorough testing of transactions for Midtrans integration, ensuring the system operated effectively and minimizing potential errors`],
+        features: ['Midtrans Port Interface', 'HTTP Client Helper', `Error Mapping`, `Retry Request with Limits`, 'Outgoing Midtrans Snap Request', 'Transaction History Endpoint'],
+        images: ["/projects/tiketq-microservice/Homepage.jpg", "/projects/tiketq-microservice/search-result-page.jpg", "/projects/tiketq-microservice/not-found-search.jpg", "/projects/tiketq-microservice/result-search.jpg", "/projects/tiketq-microservice/booking-data.jpg", "/projects/tiketq-microservice/review.jpg", "/projects/tiketq-microservice/payment.jpg"],
+        tech: ['NestJs', 'TypeORM', 'PostgreSQL', 'TypeScript', 'Git', 'ESLint', 'Rest API', `Hexagonal Architecture`, `Nx Workspace`, `Midtrans`, `Docker`]
     },
 }
 
