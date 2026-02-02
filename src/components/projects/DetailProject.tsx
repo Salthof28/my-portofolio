@@ -92,7 +92,7 @@ export default function DetailProject ({ hiddenForm, currentId }: DetailWorkExpe
                     </div>
                 )}
                 {position === btnName[4] && (
-                    <div className={`${inter.className}`}>
+                    <div className={`${inter.className} overflow-auto h-[16rem] custom-scrollbar`}>
                         <h2 className={`text-[#559684] font-bold text-[clamp(0.8rem,1.5vw,1.1rem)] mb-[0.4rem]`}>{position}</h2>
                         <div className={`flex flex-row flex-wrap text-justify ${inter.className} text-[clamp(0.8rem,1.5vw,1rem)] text-[#bbbbbb] gap-[0.4rem] max-lg:justify-center `}>
                             {project.images?.map((img, index) => (
