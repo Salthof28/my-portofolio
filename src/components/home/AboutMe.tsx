@@ -22,7 +22,7 @@ export default function AboutMe () {
                 <img src="profile/pa3.jpeg" alt="scada-operator"/>
                 <img src="profile/pa4.jpeg" alt="pa4"/>
                 <img src="profile/pa1.jpeg" alt="aseptic-operator"/>
-                <img src="profile/pa2.jpeg" alt="pa2"/>cd
+                <img src="profile/pa2.jpeg" alt="pa2"/>
             </div>
             <article className="text-[#f0fbff] column-container flex flex-col min-[1536px]:gap-[2rem] min-[2400px]:gap-[8rem] 2xl: gap-[1rem] max-md:mt-[0.4rem] max-lg:mt-[2rem] 2xl:mt-[8rem]">
                 <h1 className={`${teko.className} def-h1 text-center max-lg:hidden`}>Salman Althof</h1>
