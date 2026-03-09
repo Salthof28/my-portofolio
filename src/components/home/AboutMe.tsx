@@ -29,10 +29,10 @@ export default function AboutMe () {
                 <div className={`text-justify`}>
                     <h2 className={`${inter} def-h2 font-bold`}>About Me:</h2>
                     <div className={`${inter} text-[clamp(0.8rem,1.5vw,1.5rem)] flex flex-col gap-[1rem]`}>
-                        <p >{`I am a`} <span className={`text-[#74eab0]`}>Software Engineer</span> {`who enjoys building impactful and data-driven digital solutions. Before diving into tech, I spent four years as a Field Engineer at PT Bio Farma, where I developed strong analytical and problem-solving skills by optimizing production systems and reducing downtime.`}
+                        <p >{`I am a`} <span className={`text-[#74eab0]`}>Software Engineer</span> {`with a systems engineering background who focuses on building reliable and scalable web applications through continuous learning and collaboration. Before diving into tech, I spent four years as a Field Engineer at PT Bio Farma, where I developed strong analytical and problem-solving skills by optimizing production systems and reducing downtime.`}
                         </p>
-                        <p>Skilled in NestJs, React, Next.js, and Docker, I combine analytical thinking from my Electrical and Industrial Engineering background with a problem-solving mindset to deliver scalable and user-focused solutions.</p>
-                        <p>With a background in Electrical and Industrial Engineering, I combine technical precision with a system-oriented mindset — always learning, improving, and striving to build software that makes a difference.</p>
+                        <p>Skilled in NestJs, React, Next.js, FastApi, Redis, and Docker, I combine analytical thinking from my Electrical and Industrial Engineering background with a problem-solving mindset to deliver scalable and user-focused solutions.</p>
+                        <p>With a background in Electrical and Industrial Engineering, I combine technical precision with a system-oriented mindset always learning, improving, and striving to build software that makes a difference.</p>
                         
                     </div>
                 </div>
