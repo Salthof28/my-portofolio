@@ -23,11 +23,15 @@ export default function Skills() {
     { img: "skills/php.png", title: "PHP" },
     { img: "skills/nodejs.png", title: "Node.js" },
     { img: "skills/mysql.png", title: "MySQL" },
+    { img: "skills/postgresql.png", title: "PostgreSQL"},
     { img: "skills/mongodb.png", title: "MongoDB" },
     { img: "skills/nextjs.png", title: "NextJs" },
     { img: "skills/nestjs.png", title: "NestJs" },
     { img: "skills/scada.png", title: "Scada" },
-    { img: "skills/golang.png", title: "Golang"}
+    { img: "skills/golang.png", title: "Golang"},
+    { img: "skills/python.png", title: "Python"},
+    { img: "skills/fastapi.png", title: "FastApi"},
+    { img: "skills/redis.png", title: "Redis"}
   ];
   const softSkill = [
     "Communication",
