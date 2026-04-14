@@ -13,7 +13,7 @@ export default function Navbar() {
     {icon: <FileUser className={styleNav} strokeWidth={1.3}/>, name: 'Profile', href: '/#about', id: 'about'},
     {icon: <Brain className={styleNav} strokeWidth={1.3}/>, name: 'Skills', href: '/#skills', id: 'skills'},
     {icon: <SquareChartGantt className={styleNav} strokeWidth={1.3}/>, name: 'Projects', href: '/projects', id: 'projects'},
-    {icon: <Phone className={styleNav} strokeWidth={1.3}/>, name: 'Contact', href: '/contact', id: 'contact'},
+    // {icon: <Phone className={styleNav} strokeWidth={1.3}/>, name: 'Contact', href: '/contact', id: 'contact'},
   ]
 
   useEffect(() => {
