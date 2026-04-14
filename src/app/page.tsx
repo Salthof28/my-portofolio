@@ -33,8 +33,8 @@ export default function Home() {
               <br/>
               <div className="flex flex-col md:flex-row gap-[1.4rem] items-center">
                 <Link href='/#about' className={`my-custom-button bg-[#fd8c41] text-[#270D01] shadow-lg/30 ring-[0.1rem] ring-black/5 active:scale-95 hover:scale-110 transform transition duration-300 w-fit`}>About Me</Link>
-                <form method="get" action="profile/cv/resume.pdf">
-                    <button className={`my-custom-button bg-[#FCAD78] text-[#270D01] shadow-lg/30 ring-[0.1rem] ring-black/5 active:scale-95 hover:scale-110 transform transition duration-300`}>Download My Resume</button>
+                <form method="get" action="profile/cv/Salman-Althof-CV.pdf">
+                    <button className={`my-custom-button bg-[#FCAD78] text-[#270D01] shadow-lg/30 ring-[0.1rem] ring-black/5 active:scale-95 hover:scale-110 transform transition duration-300`}>Download My CV</button>
                 </form>
               </div>
           </div>
