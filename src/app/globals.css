@@ -33,7 +33,7 @@ body {
   /* background-color: #FCAD78; */
   font-weight: bold;
   text-align: center;    
-  padding: 0.4rem 2rem;
+  padding: clamp(0.2rem, 1vw, 0.4rem) clamp(1rem, 5vw, 2.8rem);
 }
 
 .def-h1 {
