@@ -3,6 +3,7 @@ import { Teko } from "next/font/google";
 import { Inter } from "next/font/google";
 import slideSoft from "./Skills.module.css";
 import { title } from "process";
+import Link from "next/link";
 
 const teko = Teko({
   subsets: ["latin"],
@@ -41,7 +42,7 @@ export default function Skills() {
   ];
   const repeatedSoftSkills = [...softSkill, ...softSkill, ...softSkill, ...softSkill];
   return(
-    <section id="skills" className="bg-[#00131A] flex flex-col items-center py-[8rem] min-h-full w-screen">
+    <section id="skills" className="bg-[#00131A] flex flex-col items-center pt-[8rem] min-h-full w-screen">
       <h2 className={`flex flex-col my-[1rem] text-[#ffffff] def-h2 ${teko.className}`}>Skills</h2>
       <div className={`text-[#ffffff] flex flex-row gap-[0.6rem] p-[1rem] my-[1rem] mx-[5%] items-center justify-between rounded-[0.6rem] bg-amber-600 md:w-[40rem] xl:w-[60rem] shadow-[inset_-3px_3px_0_#cea623,inset_2px_2px_5px_#78350f] -rotate-2 ${slideSoft.electricCard}`} >
         <div className={slideSoft.electricFlicker}></div>
@@ -84,6 +85,7 @@ export default function Skills() {
           </div>
         ))}
       </div>
+      <Link href={'/projects'} className={`w-[12em] h-[3.5em] my-[6em] bg-amber-600 text-[#00b6b68c] rounded-xl text-[1.2em] -rotate-10 ${inter.className} font-bold ${slideSoft.electricCard} text-[#ffffff] flex justify-center items-center`}>View My Project</Link>
 
       {/* <div className={`${slideSoft.bannerSkill} mt-[2%]`}>
         <div className={`${slideSoft.sliderSkill}`} style={{ ["--quantity"]: mySkills.length } as React.CSSProperties}>
