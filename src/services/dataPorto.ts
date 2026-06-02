@@ -10,13 +10,20 @@ export const listProject: ListProject[] = [
     },
     {
         id: 2,
+        slug: "tsunami-wave-detection-iot",
+        title: "Tsunami Wave Detection System Based on IoT",
+        img: '/projects/wave-detection-iot/preview.png',
+        content: 'Designed and developed an IoT-based Tsunami Wave Detection System as a final engineering project, integrating Arduino Nano and Arduino Uno microcontrollers, rotary encoder sensors, and NRF24L01 wireless communication modules to monitor wave-induced buoy movement in real time. The system was designed to acquire sensor data, transmit measurements wirelessly from offshore sensing units to a coastal monitoring station, and store data in Firebase for further analysis.'
+    },
+    {
+        id: 3,
         slug: "dshopper-frontend",
         title: "dShopers",
         img: '/projects/dshopper/Home.png',
         content: 'This project involves the development of a modern e-commerce website, leveraging Next.js technology. The platform is designed to facilitate users in seamlessly browsing, searching, and filtering products across various categories. It enhances the user experience by providing detailed product information and enabling efficient management of a shopping cart. Meanwhile, administrators can maintain product inventory and manage user profiles through a secure dashboard, which ensures protected access via middleware.'
     },
     {
-        id: 3,
+        id: 4,
         slug: "revobank-backend",
         title: "Revobank",
         img: '/projects/revobank/list-api-swagger.png',
@@ -24,21 +31,21 @@ export const listProject: ListProject[] = [
     },
 
     {
-        id: 4,
+        id: 5,
         slug: "smafarm-platform",
         title: "Smafarm",
         img: '/projects/smafarm/home.png',
         content: 'The project, titled SmaFarm, is aimed at providing a comprehensive solution for livestock management and care. It addresses the market need for digital platforms that support small and medium farmers by resolving their difficulties in marketing livestock and managing care efficiently. SmaFarm acts as a "one-stop care and marketplace" for livestock, ensuring transparency and trust in high-value transactions.'
     },
     {
-        id: 5,
+        id: 6,
         slug: "werent-prd",
         title: "WeRent - Product Requirement Document Implementation",
         img: '/projects/werent-prd/page-detail.png',
         content: 'Implementation Project is a hands-on project focused on developing user-centered web applications based on PRD guidelines. Supervised by RevoU, the project hones collaboration, problem-solving, and analytical skills to deliver scalable, high-quality solutions aligned with business and user needs.'
     },
     {
-        id: 6,
+        id: 7,
         slug: "tiketq-microservice",
         title: "TiketQ - Microservice Development",
         img: '/projects/tiketq-microservice/Homepage.jpg',
@@ -51,13 +58,23 @@ export const detailProjects: ProjectMap = {
         slug: "scada-ovenHeater",
         title: "SCADA System Oven Heater and Tea Leaf Dryer Plant",
         img: '/projects/scada/HMI.JPG',
-        description: 'Designed and developed a full SCADA system for an Oven Heater and Tea Leaf Dryer plant, integrating ADAM-6015/6060 modules, building a complete HMI with alarm system, OPC communication, database logging, and implementing SCADA standards such as security levels, P&ID documentation, state flow diagrams, and sequential control tables. Developed an interactive Human Machine Interface (HMI) that enables real-time visualization, monitoring, and control of plant operations, including temperature regulation, drying cycles, and system alarms. This solution improved operational efficiency, enhanced safety, and provided operators with intuitive control over the drying process.',
+        description: 'Designed and developed an IoT-based Tsunami Wave Detection System as a final engineering project, integrating Arduino Nano and Arduino Uno microcontrollers, rotary encoder sensors, and NRF24L01 wireless communication modules to monitor wave-induced buoy movement in real time. The system was designed to acquire sensor data, transmit measurements wirelessly from offshore sensing units to a coastal monitoring station, and store data in Firebase for further analysis. A custom Android application was developed to provide real-time visualization of wave measurements through graphical and tabular displays, while an alert mechanism was implemented to notify users when wave height exceeded predefined thresholds. The project involved embedded programming, sensor integration, wireless telemetry, database connectivity, system testing, and performance validation. Testing in a tsunami simulation environment demonstrated 97.70% measurement accuracy and 99.80% operational stability.',
         roles: ['Designed the SCADA system architecture for the Oven Heater and Tea Leaf Dryer plant.', 'Created technical documentation including BFD, PFD, P&ID, and Loop Diagrams.', 'Integrated ADAM-6015 for analog temperature sensing and ADAM-6060 for digital relay control.', 'Configured Serial/Modbus communication between controllers and the SCADA software.', 'Developed the full Human Machine Interface (HMI), including tagnames, scripts, animations, and interface layout.', 'Implemented an alarm system to detect temperature deviations, equipment faults, and relay issues.', 'Set up OPC communication (OLE for Process Control) for real-time data exchange.', 'Built database logging for temperature trends, alarm history, and operational events.', 'Implemented system security by defining user access levels (operator, supervisor, administrator).', 'Created state flow diagrams and sequential tables to model the operational logic of the oven heater and dryer.'],
         features: ['Real-time monitoring of oven and dryer temperature using ADAM-6015 analog inputs.', 'Digital control of heater relays via ADAM-6060 outputs.', 'Fully interactive HMI with process visualization, animations, and operator controls.', 'Alarm system with real-time fault detection, alarm acknowledgments, and priority levels.', 'OPC-based data communication for reliable integration between controllers and SCADA software.', 'Data logging for temperature trends, alarm history, and operational events stored in a database.', 'User access management with multiple security levels to control system permissions.', 'Sequential operation logic for startup, running, and shutdown phases.', 'State flow visualization that represents process steps and transitions.', 'Standardized SCADA design based on industrial HMI and documentation standards.'],
         images: ["/projects/scada/HMI.JPG", '/projects/scada/Sensor Pengering.JPG', '/projects/scada/Maintenance.JPG', '/projects/scada/Plant Oven.JPG', '/projects/scada/Plant Pengering.JPG', '/projects/scada/Sensor oven.JPG',"/projects/scada/sfd-loop-diagram.png", "/projects/scada/sfd-sistem-umum.png", "/projects/scada/tabel-sequential.png"],
         tech: ['ADAM-6060', 'ADAM-6015', 'SCADA', 'HMI', 'OPC Server']
     },
     2: {
+        slug: "tsunami-wave-detection-iot",
+        title: "Tsunami Wave Detection System Based on IoT",
+        img: '/projects/wave-detection-iot/preview.png',
+        description: 'Designed and developed an IoT-based Tsunami Wave Detection System using Arduino Nano, Arduino Uno, rotary encoder sensors, and NRF24L01 wireless communication modules. The system measured buoy displacement caused by wave activity, transmitted sensor data in real time to a Firebase database, and enabled remote monitoring through a custom Android application. An alert mechanism was implemented to notify users when wave height exceeded predefined thresholds. System testing using a tsunami simulation environment achieved 97.70% measurement accuracy and 99.80% operational stability.',
+        roles: ['Designed and developed an IoT-based tsunami early warning system using Arduino Nano and Arduino Uno for distributed sensing and monitoring.', 'Integrated a rotary encoder sensor to measure buoy rope displacement caused by wave movement and implemented threshold-based tsunami detection logic.', 'Established wireless communication between offshore sensing units and coastal monitoring stations using NRF24L01 transceivers for real-time data transmission.', 'Developed an automated warning system utilizing buzzer alarms and social media notifications when wave height exceeded predefined safety thresholds.', 'Built a cloud-connected monitoring platform using Firebase, enabling real-time storage, visualization, and analysis of wave data through a custom Android application.', 'Developed embedded software in C and backend communication services using Node.js, along with Android application features using Java and Kotlin.', 'Conducted system testing using a tsunami simulation environment, achieving 99.70% measurement accuracy and 99.80% system stability.', 'Produced technical documentation, system architecture diagrams, testing procedures, and performance evaluation reports.'],
+        features: ['Real-time wave monitoring using a sensing mechanism', 'Wave height measurement using rotary encoder sensors', 'Wireless data communication using NRF24L01 transceivers', 'Threshold-based abnormal wave detection', 'Automatic buzzer alarm activation', 'Real-time data storage in Firebase', 'Android application for monitoring', 'Wave data visualization through graphs and tables', 'Social media notification integration', ''],
+        images: ["/projects/wave-detection-iot/flowchart_process.JPG", "/projects/wave-detection-iot/diagram-blok.png", "/projects/wave-detection-iot/wirlap1.JPG", "/projects/wave-detection-iot/wirlap2.JPG", "/projects/wave-detection-iot/mp.JPG", "/projects/wave-detection-iot/disconect.JPG", "/projects/wave-detection-iot/connect.JPG", "/projects/wave-detection-iot/sstwit.JPG", "/projects/wave-detection-iot/aplikasi_login.JPG", "/projects/wave-detection-iot/realtime-data.JPG", "/projects/wave-detection-iot/list_tanggal.JPG", "/projects/wave-detection-iot/database-wave-detection.JPG", "/projects/wave-detection-iot/database.jpg", "/projects/wave-detection-iot/preview.png"],
+        tech: ['Arduino Nano', 'Arduino Uno', 'Rotary Encoder', 'NRF24L01 Wireless Module', 'C', 'Java', 'JavaScript (Node.js)', 'Firebase', 'Android']
+    },
+    3: {
         slug: "dshopper-frontend",
         title: "dShopers",
         img: '/projects/dshopper/Home.png',
@@ -67,7 +84,7 @@ export const detailProjects: ProjectMap = {
         images: ["/projects/dshopper/ShopPage.png", "/projects/dshopper/ProfileCustomer.png", "/projects/dshopper/ListProductAdmin.png", "/projects/dshopper/PageHandleUsers.png"],
         tech: ['NextJs', 'TailwindCSS', 'ESLint', 'Jest', 'Vercel']
     },
-    3: {
+    4: {
         slug: "revobank-backend",
         title: "Revobank",
         img: '/projects/revobank/list-api-swagger.png',
@@ -77,7 +94,7 @@ export const detailProjects: ProjectMap = {
         images: ["/projects/revobank/erd-database.png", "/projects/revobank/list-api-swagger.png", "/projects/revobank/example-account-api.png"],
         tech: ['NestJs', 'Prisma', 'PostgreSQL', 'TypeScript', 'Git', 'Rest API', 'Swagger', 'Bcrypt', 'Cyrpto', 'Jest']
     },
-    4: {
+    5: {
         slug: "smafarm-platform",
         title: "Smafarm Platform",
         img: '/projects/smafarm/home.png',
@@ -87,7 +104,7 @@ export const detailProjects: ProjectMap = {
         images: ["/projects/smafarm/livestock.png", "/projects/smafarm/shelter.png", "/projects/smafarm/profile.png", "/projects/smafarm/formBuy.png", "/projects/smafarm/dashboardAdmin.png", "/projects/smafarm/dashboard-breeder.png", "/projects/smafarm/ERD-Database.png", "/projects/smafarm/apiList.png"],
         tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Vercel', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API', 'Bcrypt', 'AUTH']
     },
-    5: {
+    6: {
         slug: "werent-prd",
         title: "WeRent - Product Requirement Document Implementation",
         img: '/projects/werent-prd/page-detail.png',
@@ -97,7 +114,7 @@ export const detailProjects: ProjectMap = {
         images: ["/projects/werent-prd/page-detail.png", "/projects/werent-prd/logger-middleware.png", "/projects/werent-prd/test.png"],
         tech: ['NextJs', 'NestJs', 'Prisma', 'PostgreSQL', 'Railway', 'TypeScript', 'TailwindCSS', 'React', 'Git', 'ESLint', 'Rest API']
     },
-    6: {
+    7: {
         slug: "tiketq-microservice",
         title: "TiketQ - Microservice Development",
         img: '/projects/tiketq-microservice/Homepage.jpg',
