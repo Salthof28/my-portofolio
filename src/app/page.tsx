@@ -1,3 +1,4 @@
+import { ChatBot } from "@/components/ChatBot";
 import Footer from "@/components/Footer";
 import AboutMe from "@/components/home/AboutMe";
 import Education from "@/components/home/Education";
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col items-center min-h-screen overflow-x-hidden">
       <Navbar/>
+      <ChatBot />
       <main>
         {/* home hello */}
         <section id="home" className="flex flex-col-reverse items-center lg:flex-col bg-[#270D01] w-screen  min-h-screen justify-center lg:justify-between gap-[2em] 2xl:gap-[8em] px-[10%] lg:pt-[2em] pt-[2em]">

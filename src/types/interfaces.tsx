@@ -34,4 +34,29 @@ export interface WorkExperienceItf {
     tech: string[],
 }
 
+export interface EducationItf {
+    id: number
+    institution: string,
+    location: string,
+    year: string,
+    degree: string,
+    thesis?: string,
+    finalProject?: string
+}
+
+export interface ContactItf {
+    linkedln: string,
+    github: string,
+    whatsApp: string,
+    email: string
+}
+export interface PortoBotDataItf {
+    name: string,
+    aboutMe: string,
+    education: EducationItf[],
+    workExperience: WorkExperienceItf[]
+    project: ProjectMap,
+    contact: ContactItf
+}
+
 

@@ -1,4 +1,4 @@
-import { ListProject, ProjectMap, WorkExperienceItf } from "@/types/interfaces"
+import { ListProject, PortoBotDataItf, ProjectMap, WorkExperienceItf } from "@/types/interfaces"
 
 export const listProject: ListProject[] = [
     {
@@ -140,6 +140,39 @@ export const workExperience: WorkExperienceItf[] = [
         tech: ['SCADA', 'PLC', 'MySQL', 'Microsoft Office']
     }
 ]
+
+
+export const portoBotData: PortoBotDataItf = {
+    name: "Salman Althof",
+    aboutMe: "I am a Software Engineer with a systems engineering background who focuses on building reliable and scalable web applications through continuous learning and collaboration. Before diving into tech, I spent four years as a Field Engineer at PT Bio Farma, where I developed strong analytical and problem-solving skills by optimizing production systems and reducing downtime. Skilled in NestJs, React, Next.js, FastApi, Redis, and Docker, I combine analytical thinking from my Electrical and Industrial Engineering background with a problem-solving mindset to deliver scalable and user-focused solutions. With a background in Electrical and Industrial Engineering, I combine technical precision with a system-oriented mindset always learning, improving, and striving to build software that makes a difference.",
+    education: [
+        {
+            id: 1,
+            institution: "Bandung State Polytechnic (Polban)",
+            location: "Bandung",
+            year: "2016 - 2019",
+            degree: "Associate Degree of Electronics Engineering",
+            finalProject: "Tsunami Wave Detection System Based on IoT"
+        },
+        {
+            id: 2,
+            institution: "Binus University",
+            location: "Jakarta",
+            year: "2022 - 2024",
+            degree: "Bachelor Of Industrial Engineering",
+            thesis: "Optimization Analysis Of Vessel Cooling Time To Prevent nOPV2 Vaccine Deviation Using Linear Regression And Factorial DOE At PT Biofarma"
+        }
+    ],
+    workExperience: workExperience,
+    project: detailProjects,
+    contact: {
+        linkedln: "https://www.linkedin.com/in/salman-althof-241209238",
+        github: "https://github.com/Salthof28",
+        whatsApp: "https://wa.me/6282120018395",
+        email: "salmanalthof31@gmail.com"
+    }
+}
+
 
 // overview
 // roles
