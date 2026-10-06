@@ -24,15 +24,15 @@ export default function AboutMe () {
                 <img src="profile/pa1.jpeg" alt="aseptic-operator"/>
                 <img src="profile/pa2.jpeg" alt="pa2"/>
             </div>
-            <article className="text-[#f0fbff] column-container flex flex-col min-[1536px]:gap-[2rem] min-[2400px]:gap-[8rem] 2xl: gap-[1rem] max-md:mt-[0.4rem] max-lg:mt-[2rem] 2xl:mt-[8rem]">
+            <article className="text-[#f0fbff] column-container flex flex-col min-[1536px]:gap-[2rem] min-[2400px]:gap-[3.5rem] 2xl: gap-[1rem] max-md:mt-[0.4rem] max-lg:mt-[2rem] 2xl:mt-[8rem]">
                 <h1 className={`${teko.className} def-h1 text-center max-lg:hidden`}>Salman Althof</h1>
                 <div className={`text-justify`}>
                     <h2 className={`${inter} def-h2 font-bold`}>About Me:</h2>
                     <div className={`${inter} text-[clamp(0.8rem,1.5vw,1.5rem)] flex flex-col gap-[1rem]`}>
-                        <p >{`I am a`} <span className={`text-[#74eab0]`}>Software Engineer</span> {`with a systems engineering background who focuses on building reliable and scalable web applications through continuous learning and collaboration. Before diving into tech, I spent four years as a Field Engineer at PT Bio Farma, where I developed strong analytical and problem-solving skills by optimizing production systems and reducing downtime.`}
+                        <p >{`I am an`} <span className={`text-[#74eab0]`}>Engineer</span> {`with experience in Software Development and a background in Electrical and Industrial Engineering, focused on building reliable software and automation solutions through continuous learning and collaboration. Before focusing on software development, I spent four years as a Field Engineer at PT Bio Farma, where I developed strong analytical and problem-solving skills through production operations, SCADA monitoring, instrumentation, and equipment troubleshooting.`}
                         </p>
-                        <p>Skilled in NestJs, React, Next.js, FastApi, Redis, and Docker, I combine analytical thinking from my Electrical and Industrial Engineering background with a problem-solving mindset to deliver scalable and user-focused solutions.</p>
-                        <p>With a background in Electrical and Industrial Engineering, I combine technical precision with a system-oriented mindset always learning, improving, and striving to build software that makes a difference.</p>
+                        <p>Skilled in NestJS, React, Next.js, FastAPI, Redis, and Docker, I combine software development skills with experience in PLC, HMI, SCADA, industrial automation, sensors, and electronics to build scalable applications and practical engineering solutions.</p>
+                        <p>With experience across Software Development, Electrical Engineering, and Industrial Automation, I bring technical precision and a system-oriented mindset to every project, while continuously learning, improving, and striving to build software and technology solutions that make a difference.</p>
                         
                     </div>
                 </div>
